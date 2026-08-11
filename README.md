@@ -78,10 +78,12 @@ Combinaciones que funcionan bien juntas:
 | `Fraunces` | `Space Mono` | cálido, con carácter |
 | `Syne` | `IBM Plex Mono` | moderno, casi de estudio de diseño |
 
-**¿Y si quieres otra cosa distinta?** Para eso está
-**[PROMPT.md](PROMPT.md)**: lleva prompts hechos para pedirle a una IA que
-adapte el diseño o te genere documentos nuevos (correos, tarjetas, presupuestos)
-con la misma identidad.
+**¿Y las formas?** El dibujo de la derecha, las escuadras de las esquinas y el
+degradado del fondo no están en `perfil.py`: viven dentro de los generadores.
+Para cambiar eso —y para pedir un rediseño entero, o documentos nuevos con la
+misma identidad— está **[PROMPT.md](PROMPT.md)**, con los prompts ya escritos y,
+sobre todo, con **qué no debe tocar la IA** para que la firma siga funcionando
+en el correo.
 
 ---
 

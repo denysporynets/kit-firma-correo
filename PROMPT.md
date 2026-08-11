@@ -33,23 +33,58 @@ Cuando termines, ejecuta `python3 generar.py` y dime si ha salido algún aviso.
 
 ---
 
-## 2 · Cambiarle el aspecto
+## 2 · Cambiarle el aspecto: colores, formas y detalles
+
+`perfil.py` te deja cambiar **colores y tipografías** tú solo. Las **formas**
+—el dibujo de la derecha, las escuadras de las esquinas, el degradado del
+fondo, la rayita bajo el puesto— están dentro de los generadores, y para eso
+está este prompt: la IA sí puede tocarlas.
 
 ```
 Quiero cambiar el aspecto del kit. Mi actividad es [a qué te dedicas] y quiero
 que transmita [ej. cercanía y oficio / seriedad técnica / diseño y calma].
 
-Propón DOS alternativas completas de `PALETA` y `FUENTES` en `perfil.py`,
-explicando en una línea qué transmite cada una. Reglas:
+Propón DOS alternativas completas y enséñamelas en imagen para que elija.
+De cada una quiero que decidas:
 
-- Cinco colores como mucho: papel, tinta, acento, metal y apagado.
-- El texto sobre el fondo tiene que leerse bien: contraste alto de verdad,
-  nada de gris claro sobre gris claro.
-- Las tipografías tienen que existir en Google Fonts: una con serifa para el
-  nombre y una monoespaciada para los datos.
+- COLOR: los cinco de `PALETA` (papel, tinta, acento, metal, apagado).
+- TIPOGRAFÍA: dos de Google Fonts, una con serifa para el nombre y una
+  monoespaciada para los datos.
+- EL DIBUJO de la derecha del banner (ahora son puntos unidos, en
+  `gen_banner.py`): puede ser otra cosa, o no estar. Si no encaja con lo que
+  hago, quítalo y deja respirar el nombre.
+- LAS MARCAS de las esquinas: escuadras, un filete alrededor, o nada.
+- EL FONDO: degradado o plano.
+
+Reglas:
+- Contraste alto de verdad. Nada de gris claro sobre gris claro.
+- Las tipografías tienen que existir en Google Fonts.
+- Todo lo que sea un ajuste de valor (colores, tipos, tamaños) déjalo en
+  `perfil.py`, no repartido por los generadores, para que pueda cambiarlo
+  luego sin ti.
 
 Genera las dos, hazme una captura de cada banner y las comparo.
 ```
+
+### Cómo pedirlo para que salga bien
+
+Cuatro cosas que cambian mucho el resultado:
+
+**Di el efecto, no el CSS.** «Que parezca de un despacho serio pero no
+antiguo» funciona mejor que «pon el borde a 2px». Lo segundo lo hace, pero
+solo eso; lo primero mueve todo el conjunto.
+
+**Pide dos o tres y míralas.** Describir un diseño con palabras no vale para
+elegirlo. Pide siempre que te renderice las variantes y te enseñe las
+imágenes; decidir sobre la captura cuesta diez segundos.
+
+**Da una referencia si la tienes.** Una web que te guste, una tarjeta que
+tengas, hasta un color de una foto. «Como la web de [X], pero más sobrio» es
+una instrucción concreta.
+
+**Di qué NO se toca.** Sin eso, un cambio de aspecto se lleva por delante lo
+que hace que la firma funcione en el correo. Está en el último apartado de
+este fichero: pásaselo tal cual.
 
 ---
 
