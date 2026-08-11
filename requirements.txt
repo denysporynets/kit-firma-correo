@@ -1,0 +1,3 @@
+# Opcional: solo sirve para bajar el peso de los PNG.
+# El kit funciona sin esto.
+pillow>=10.0
